@@ -24,7 +24,7 @@ class ssm::service(
   $manage_service = $ssm::params::manage_service,
   $service_enable = $ssm::params::service_enable,
   $service_ensure = $ssm::params::service_ensure,
-  $service_name   = $ssm::params::manage_service,
+  $service_name   = $ssm::params::service_name,
 ) inherits ssm::params { # lint:ignore:class_inherits_from_params_class
 
   if $manage_service {
